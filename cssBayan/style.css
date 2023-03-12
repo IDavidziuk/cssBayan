@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body,
+h1,
+h2,
+p
+{
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', Verdana, Tahoma, sans-serif;
+    font-size: 5vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 7vh;
+    color: black;
+}
+
+.main_title{
+    padding-top: 3%;
+}
+
+.title {
+    font-size: 5vh;
+}
+
+label{
+    cursor: pointer;
+}
+
+.text_inf {
+    padding-top: 3%;
+    border-top: 0.1vh solid rgb(80, 80, 80);
+}
+
+.text_inf:first-child{
+    border-top: 0vh solid rgb(80, 80, 80);
+}
+
+input {
+    appearance: none;
+}
+
+.img {
+    display: block;
+    margin-left: 30%;
+    max-height: 0;
+    padding-bottom: 5vh;
+}
+
+#see{
+    max-height: 100vh;
+    width: 40%
+}
+
+input:checked ~ .img {
+    width: 40%;
+    max-height: 100vh;
+    transition: all 0.5s ease-out;
+}
+
+label:hover .img{
+    width: 40%;
+    max-height: 100vh;
+    transition: all 0.5s ease-out;
+}
+

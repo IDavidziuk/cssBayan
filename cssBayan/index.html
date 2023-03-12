@@ -6,47 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssBayan</title>
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
-    <header>
-        <h1>CSS Bayan</h1>
-    </header>
-    <main>
-        <div class="first_section sections ">
-            <input type="checkbox">
-            <label class="block_title">Code-jam task</label>
-            <div class="meme_image">
-                <img src="../cssBayan/assets/img/img2.jpeg" alt="Code-jam">
+<section class="container">
+    <h1 class="main_title">CSS Bayan</h1>
+            <label class="block_title" for="1" >
+            <input type="radio" name="meme" id="1">
+            <div class="text_inf">
+            <p class="title">Code-jam task</p>
+            <div class="icon"><span class="line"></span></div>
             </div>
-        </div>
-        <div class="second_section sections">
-            <input type="checkbox">
-            <label class="block_title">I'm solving tests</label>
-            <div class="meme_image">
-                <img src="../cssBayan/assets/img/img10.jpeg" alt="Solve_tests">
+            <img src="../cssBayan/assets/img/img2.jpeg" alt="Code-jam" class="img" id="see">
+        </label>
+            <label class="block_title" for="2">
+            <input type="radio" name="meme" id="2">
+            <div class="text_inf">
+            <p class="title">I'm solving tests</p>
+            <span class="line"></span>
             </div>
-        </div>
-        <div class="third_section sections">
-            <input type="checkbox">
-            <label class="block_title">I solve kats at codewars</label>
-            <div class="meme_image">
-                <img src="../cssBayan/assets/img/img.jpg" alt="Solve_kats">
+            <img src="../cssBayan/assets/img/img10.jpeg" alt="Solve_tests" class="img">  
+        </label>
+            <label class="block_title" for="3">
+            <input type="radio" name="meme" id="3">
+            <div class="text_inf">
+            <p class="title">I solve kats at codewars</p>
+            <div class="icon"><span class="line"></span></div>
             </div>
-        </div>
-        <div class="fourth_section sections">
-            <input type="checkbox">
-            <label class="block_title">My thoughts during the course</label>
-            <div class="meme_image">
-                <img src="../cssBayan/assets/img/img9.jpeg" alt="Thoughts">
+            <img src="../cssBayan/assets/img/img.jpg" alt="Solve_kats" class="img">
+        </label>
+            <label class="block_title" for="4">
+            <input type="radio" name="meme" id="4">
+            <div class="text_inf">
+            <p class="title">My thoughts</p>
+            <div class="icon"><span class="line"></span></div>
             </div>
-        </div>
-        <div class="fifth_section sections">
-            <input type="checkbox">
-            <label class="block_title">Expectation and reality</label>
-            <div class="meme_image">
-                <img src="../cssBayan/assets/img/img6.jpeg" alt="Expectation-reality">
+            <img src="../cssBayan/assets/img/img9.jpeg" alt="Thoughts" class="img">
+        </label>
+            <label class="block_title" for="5">
+            <input type="radio" name="meme" id="5">
+            <div class="text_inf">
+            <p class="title">Expectation and reality</p>
+            <div class="icon"><span class="line"></span></div>
             </div>
-        </div>
-    </main>
+            <img src="../cssBayan/assets/img/img6.jpeg" alt="Expectation-reality" class="img">
+        </label>
+</section>
 </body>
 </html>
