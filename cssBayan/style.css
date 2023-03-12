@@ -35,6 +35,7 @@ h1 {
 .title {
     font-weight: 700;
     font-size: 5vh;
+    color: rgb(0, 0, 199);
 }
 
 label{
@@ -57,33 +58,50 @@ input {
     display: block;
     margin-left: 30%;
     max-height: 0;
-
-}
-
-#see{
-    max-height: 100vh;
-    width: 40%
-}
-
-input:checked ~ .img {
-    width: 40%;
-    max-height: 100vh;
-    transition: all 0.5s ease-out;
-}
-
-label:hover .img{
-    width: 40%;
-    max-height: 100vh;
-    transition: all 0.5s ease-out;
 }
 
 .icon{
     display: none;
     width: 2.5%;
     transition: all 0.5s ease-out;
+    fill: black;
+}
+input:checked ~ .img {
+        width: 40%;
+        max-height: 100vh;
+        transition: all 0.5s ease-out;
+}
+
+input:checked ~ div .title{
+    color: black;
+}
+label:active .img {
+    opacity: 60%;
+}
+
+label:hover .img{
+        width: 40%;
+        max-height: 100vh;
+        transition: all 0.5s ease-out;
+}
+    
+.container:hover .icon{
+        display: block;
+}
+    
+.container:hover .title {
+        color: rgb(19, 19, 19);
 }
 
 label:hover .icon{
-    display: block;
     transform: rotate(45deg);
+}
+label:active svg {
+    fill: rgb(0, 0, 199);
+    opacity: 60%;
+}
+
+.block_title:active .title{
+    color: rgb(0, 0, 199);
+    opacity: 60%;
 }
